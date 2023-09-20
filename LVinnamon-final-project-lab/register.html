@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav id="nav-container">
+        <a href="index.html"><img id="logo" src="assets\logo.png" alt="Image not Found!"></a>
+        <a class="navitem" href="index.html">Home</a>
+        <a class="navitem" href="product.html">Product</a>
+        <div id="dropdown">
+            <button id="dropbtn"><p class="navitem">About Us</p></button>
+            <div id="dropdown-item">
+                <a class="navitem" href="location.html">Location</a>
+                <a class="navitem" href="aboutus.html">About Us</a>
+            </div>
+        </div>
+        <button id="registerbtn" onclick="window.location.href='register.html';">Register</button>
+    </nav>
+    <div id="isi">
+        <div id="bckimg">
+            <div id="isibg">
+                <div id="header">
+                    <h1>Register Now!</h1>
+                    Fill & Submit the form to register
+                </div>
+                <hr>
+                <form id="form-regis">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" placeholder="First Name" id="fname">
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Last Name" id="lname">
+                    <label for=""><b>Gender</b></label>
+                    <div id="selgen"> 
+                        <input type="radio" id="male" value="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" value="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                    <label for=""><b>Region</b></label>
+                    <select id="region" name="region">
+                        <option value="select">Choose Region..</option>
+                        <option value="sea">Asia</option>
+                        <option value="america">America</option>
+                        <option value="eu">Europe</option>
+                    </select>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Password">
+                    <label for="cfpw"><b>Confirm Password</b></label>
+                    <input type="password" id="cfpw" placeholder="Confirm Password">
+                    <div id="checkbox">
+                        <input type="checkbox" id="tos">
+                        I agree to the Terms & Conditions
+                    </div>
+                    <button onclick="Submit()" type="button" id="submitbtn">Submit</button>
+                </form>
+            </div>
+        </div>          
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        © 2023 LVinnamon All Rights Reserved. LVinnamon ® is a registered trademark and used with permission.
+    </footer>
+    <script src="./js/register.js"></script>
+</body>
+</html>

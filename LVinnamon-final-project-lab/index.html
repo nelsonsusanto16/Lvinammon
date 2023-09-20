@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="nav-container">
+        <a href="index.html"><img id="logo" src="assets\logo.png" alt="Image not Found!"></a>
+        <a class="navitem" href="index.html">Home</a>
+        <a class="navitem" href="product.html">Product</a>
+        <div id="dropdown">
+            <button id="dropbtn"><p class="navitem">About Us</p></button>
+            <div id="dropdown-item">
+                <a class="navitem" href="location.html">Location</a>
+                <a class="navitem" href="aboutus.html">About Us</a>
+            </div>
+        </div>
+        <button id="registerbtn" onclick="window.location.href='register.html';">Register</button>
+    </nav>
+    <div id="isi">
+    <div id="bckimg">
+        <div id="kiri">
+            <h1>Best Cinnamon Rolls</h1>
+            <p>We are a cinnamon rolls company that has been passionately creating delicious and irresistible cinnamon rolls for the past 10 years. With a decade of experience, we have perfected our recipes and techniques to deliver the highest quality cinnamon rolls to our valued customers. Our commitment to using the finest ingredients ensures that every bite of our cinnamon rolls is a heavenly experience.</p>
+        </div>
+        <div id="slide-body">
+            <div id="slide-container">
+                <div class="left">&#9668</div>
+                <div id="content-container">
+                    <div id="slider-content">
+                        <img src="assets\slider1.jpeg" alt="err" class="slider-img">
+                        <img src="assets\slider2.jpg" alt="err" class="slider-img">
+                        <img src="assets\img212.jpg" alt="err" class="slider-img">
+                    </div>
+                </div>
+                <div class="right">&#9658</div>
+            </div>
+        </div>
+    </div>
+    <div id="kategori">
+        <hr>
+        <h2>Cinnamon Rolls Categories</h2>
+        <div id="isikat">
+            
+            <div class="card">
+                <a href="/product.html#menu-1">
+                <img src="assets\cat1.jpg" alt="">
+                </a>
+                <div id="isicard">
+                    <h3>Classic Cinnamon Rolls</h3>
+                    <p>Traditional variant of cinnamon rolls with a dough rolled with layers of cinnamon sugar inside.
+                        Served with sweet glaze on top.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="/product.html#menu-2">
+                    <img src="assets\cat2.jpg" alt="">
+                    </a>
+                <div id="isicard">
+                    <h3>Deluxe Cinnamon Rolls</h3>
+                    <p>Variations of cinnamon rolls can have additional fruit fillings such as apples, raisins, or blueberries. These fruits adds different taste and freshness.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="/product.html#menu-3">
+                    <img src="assets\cat3.jpeg" alt="">
+                    </a>
+                <div id="isicard">
+                    <h3>Sweet n Sugary Cinnamon Rolls</h3>
+                    <p>Cinnamon rolls that is filled with nuts like walnuts, almonds, or pecans. These nuts add a rich and crunchy texture to the cinnamon rolls.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        © 2023 LVinnamon All Rights Reserved. LVinnamon ® is a registered trademark and used with permission.
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.content-container{
+        
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* navbar */
+
+#logo {
+    width: 150px;
+    margin-inline: 10px;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:white;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navitem {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+#dropbtn {
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    padding: 12px 18px;
+}
+
+#dropdown-item {
+    background-color:#f9eddf;
+    position: absolute;
+    display: none;
+    z-index: 1;   
+}
+
+#dropdown-item a {
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+
+}
+
+#registerbtn{
+    background-color:#fdd043;
+    border: none;  
+    color: #796567;
+    padding: 10px 25px;
+    font-weight:600;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-inline: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#registerbtn:hover {
+    background-color:#ffdc73;
+
+}
+
+#dropdown-item a:hover {
+    background-color: blanchedalmond;
+}
+
+#dropdown:hover #dropdown-item{
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+.store-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.store-card__name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.store-card__address {
+    margin-bottom: 5px;
+}
+
+.store-card__hours {
+    font-weight: bold;
+}
+
+  /* FOOTER */
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: lightgray;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    #nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#FAF0E4;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #nav-container a {
+        text-decoration: none;
+        color: black;
+        margin: 8px 0px;
+    }
+
+    #logo {
+        width: 20%;
+    }
+}
